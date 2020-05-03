@@ -7,18 +7,21 @@
         <title>Pose One</title>
     </head>
     <body>
-        <!--nav popup overlay!-->
-        <aside class="navOverlay">Navigation Overlay</aside>
+        <!--nav popup overlay!
+        <aside class="navOverlay">Navigation Overlay</aside>-->
 
-        <!--science popup overlay!-->
-        <aside class="scienceOverlay">Science Overlay</aside>
+        <!--science popup overlay!
+        <aside class="scienceOverlay">Science Overlay</aside>-->
 
         <div id="poseOne">
 
             <!--pressable button-->
-            <nav class="nav">
-                <img src="img/menu.svg" alt="menu">
-            </nav>
+            <div class="nav">
+                <img src="img/menu.svg" alt="menu" class="btn">
+                <a href="whatIsYoga.html"> WHAT IS YOGA? AND THE SCIENCE BEHINDF IT </a>
+            </div>
+
+            <img src="img/menu.svg" alt="menu" class="btn exit">
 
             <header class="header">PRANAYAMA BREATHING</header>
 
@@ -27,17 +30,19 @@
             </div>
 
             <div class="next">
-                <img src="img/next.svg" alt=">">
+                <a href="poseTwo.html"><img src="img/next.svg" alt=""></a>
             </div>
 
             <div class="poseImg">
-                <img src="img/Pranayama.png" alt="Pranayama">
+                <img src="img/poses/111.jpg" alt="Pranayama">
             </div>
 
             <!--pressable button-->
-            <article class="theScience">THE SCIENCE</article>
+            <article class="theScience">
+                <p>THE SCIENCE BEHIND <b>PRANAYAMA BREATHING</b></p>
+            </article>
 
         </div>
-
+        <script src="js/overlays.js"></script>
     </body>
 </html>

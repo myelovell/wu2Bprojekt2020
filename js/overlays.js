@@ -1,16 +1,14 @@
 //2020-03-05,
 
-function chefRamsy(){
-    let meny = document.querySelector(".navOverlay");
-    meny.classList.toggle("show");
+function overlays() {
+    var pickNav = document.querySelector(".nav")
+    pickNav.classList.toggle("show")
 
-    let fade = document.querySelector(".fade-layer");
-    fade.classList.toggle("visible");
+    // var exitNav = document.querySelector(".exit")
+    // exitNav.classList.toggle("show")
 };
+    var btn = document.querySelector(".btn")
+    btn.addEventListener("click",overlays)
 
-//Event listeners
-let button = document.querySelector(".nav-button");
-let layer = document.querySelector(".fade-layer");
-
-button.addEventListener("click",showMenu);
-layer.addEventListener("click",showMenu);
+    var exit = document.querySelector(".btn.exit")
+    exit.addEventListener("click",overlays)
