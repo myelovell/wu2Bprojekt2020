@@ -1,0 +1,224 @@
+/*2020-02-26, CSS document for the entire Bikram Yoga website*/
+
+body {
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#index {
+    display: grid;
+    height: 97.5vh;
+    width: 97.5vw;
+    grid-gap: 10px;
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 0.5fr 7.5fr;
+    grid-template-areas:
+    'nav hd hd'
+    'nav div div';
+}
+
+/*-------Index img rows-------*/
+#row1-7, #row8-14, #row15-21, #row22-26 {
+    display: flex;
+    justify-content: center;
+}
+
+#whatIsYoga {
+    display: grid;
+    height: 97.5vh;
+    width: 97.5vw;
+    grid-gap: 10px;
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 0.5fr 7.5fr;
+    grid-template-areas:
+    'nav hd hd'
+    'nav art1 art2';
+}
+
+#poseOne {
+    display: grid;
+    height: 97.5vh;
+    width: 97.5vw;
+    grid-gap: 10px;
+    grid-template-columns: 50px 1fr 6fr 1fr;
+    grid-template-rows: 0.5fr 7.5fr;
+    grid-template-areas:
+    'nav hd hd hd'
+    'nav prev img next';
+}
+
+#poseTwo {
+    display: grid;
+    height: 97.5vh;
+    width: 97.5vw;
+    grid-gap: 10px;
+    grid-template-columns: 50px 1fr 6fr 1fr;
+    grid-template-rows: 0.5fr 7.5fr;
+    grid-template-areas:
+    'nav hd hd hd'
+    'nav prev img next';
+}
+
+#poseThree {
+    display: grid;
+    height: 95.5vh;
+    width: 97.5vw;
+    grid-gap: 10px;
+    grid-template-columns: 50px 1fr 6fr 1fr;
+    grid-template-rows: 0.5fr 7.5fr;
+    grid-template-areas:
+    'nav hd hd hd'
+    'nav prev img next';
+}
+
+
+/*----------communal variables----------*/
+#gridImg {
+    width: auto;
+    height: 100px;
+}
+
+#gridImg2 {
+    width: 100px;
+    height: auto;
+}
+
+.testImg {
+    background-color: rgba(255,255,255,0.5);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.poseImg {
+    grid-area: img;
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+}
+
+.poseImg>img {
+    margin: auto;
+    width: 40%;
+    heigh: auto;
+}
+
+.exit.show {
+    display: none;
+}
+
+.theScience {
+    grid-area: sci;
+    background-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 60px 60px 0px 0px;
+    width: 50%;
+    height: 80px;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: 87.7%;
+    margin-left: 25%;
+
+}
+
+.header {
+    background-color: rgba(255,255,255,0.5);
+    width: 400px;
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    grid-area: hd;
+    padding-top:12px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {font-size: 20px;}
+
+.next {
+    grid-area: next;
+    width: 100px;
+    height: auto;
+    padding-top:250px;
+}
+.previous {
+    grid-area: prev;
+    width: 100px;
+    height: auto;
+    padding-top:250px;
+}
+
+/*----------whatIsYoga Articles----------*/
+#articles {
+    width: 45vw;
+    height: 550px;
+    display: inline-block;
+    align: center;
+}
+
+.article1 {
+    grid-area: art1;
+    background-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: auto;
+    height: 550px;
+}
+
+.article2 {
+    grid-area: art2;
+    background-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 40px;
+    height: 550px;
+}
+
+.grid {
+grid-area: div;
+display: flex;
+align-content: center;
+flex-direction: column;
+}
+
+
+/*nav overlay*/
+.nav {
+    display: none;
+    height: 100vh;
+    width: 30vw;
+    background: white;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+}
+
+.nav.show {
+    display: flex;
+}
+
+/*only navigation button img*/
+.navButton {
+    margin-top: 20px;
+    grid-area: nav;
+    width: 50px;
+    height: auto;
+}
+
+.show{ left: 0vw;}
+.visible{ display: block;}
