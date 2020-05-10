@@ -3,46 +3,46 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+
         <link rel="stylesheet" href="css/master.css">
         <title>Pose Two</title>
     </head>
     <body>
-
-        <!--nav popup overlay!
-        <aside class="navOverlay">Navigation Overlay</aside>-->
-
-        <!--science popup overlay!
-        <aside class="scienceOverlay">Science Overlay</aside>-->
-
-        <container id="poseTwo">
-
-            <!--pressable button-->
-            <div class="nav">
-
+        <!--pressable button-->
+        <div class="nav">
+            <div class="menu">
+                <img src="img/menu.svg" alt="menu" class="btn" id="btn2">
+                <div class="block1"> <a href="index.html">Return to Main Menu</a>  </div>
+                <div class="block2"> <a href="whatIsYoga.html"> What is Yoga? And the Science Behind it </a></div>
+                <footer><p>Hot Yoga West<br>Contacts:<br>- Mätaregatan 2, 41105 - Göteborg<br>- 031 13 16 18<br>- info@hotyogawest.se</p></footer>
             </div>
+        </div>
 
-            <img src="img/menu.svg" alt="menu">
-
-            <header class="header">ARDHA CHANDRASANA
-                <p>HALF MOON POSE</p>
-            </header>
-
-            <div class="previous">
-                <img src="img/previous.svg" alt="<">
-            </div>
-            <div class="next">
-                <img src="img/next.svg" alt=">">
-            </div>
-            <div class="poseImg">
-                <img src="img/poses/222.jpg" alt="Ardha Chandrasana">
-            </div>
+        <div id="poseTwo">
+            <img src="img/menu.svg" alt="menu" class="btn exit">
+            <header class="header">ARDHA CHANDRASANA <p>HALF MOON POSE</p></header>
+            <div class="previous"><a href="poseOne.html"><img src="img/previous.svg" alt="<"></a></div>
+            <div class="poseImg"><img src="img/poses/222.jpg" alt="Ardha Chandrasana"></div>
+            <div class="next"><a href="poseThree.html"><img src="img/next.svg" alt=">"></a></div>
 
             <!--pressable button-->
             <article class="theScience">
-                <p>THE SCIENCE BEHIND <b>ARDHA CHANDRASANA</b></p>
+                <header><p>THE SCIENCE BEHIND <b>ARDHA CHANDRASANA</b></p></header>
+                <container class="scienceInfo">
+                    <div class="explanation1">
+                        <h1>Utilizing exhaling and inhaling for ultimate spinal stretch</h1>
+                    </div>
+                    <div class="explanation2">
+                        <p>Positive effects:</p>
+                        <ul>
+                            <li>Strengthens the abdominal muscles and the spine</li>
+                            <li>Stimulates organs necessary for digestion</li>
+                        </ul>
+                    </div>
+                </container>
             </article>
 
-        </container>
+        </div>
         <script src="js/overlays.js"></script>
     </body>
 </html>
